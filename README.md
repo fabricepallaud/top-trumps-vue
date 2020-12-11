@@ -1,104 +1,46 @@
-# Tour of Heroes
+# Tour of Heroes Top Trumps
 
-This project was created to help represent 4 fundamental apps, each written with Angular, React, Svelte, and Vue (respectively). The heroes and villains theme is used throughout the app.
+## What is Top Trumps?
 
-by [John Papa](http://twitter.com/john_papa)
+Top Trumps is a card game originally created in the 1960s. Each card contains a list of numerical data, and the aim of the game is to compare these values to try to trump and win an opponent's card. Over the years Top Trumps have released many themes from cars to superheroes.
 
-## Why
+## Tour of Heroes
 
-I love JavaScript and the Web! One of the most common questions I hear is "which framework is best?". I like to flip this around and ask you "which is best for you?". The best way to know this is to try it for yourself. I'll follow up with some articles on my experiences with these frameworks but in the meantime, please try it for yourself to gain your own experience with each.
+The Tour of Heroes tutorial is Angular’s means to introducing developers new to Angular to the syntax and concepts of the JavaScript framework (see https://angular.io/tutorial). John Papa, who wrote the original Tour of Heroes, has also adapted it to React and Vue. For this exercise we will be making use of the Vue implementation of Tour of Heroes: https://github.com/johnpapa/heroes-vue
 
-## Live Demos
+## Let Battle Commence!
 
-Hosted in [Azure](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-jopapa)
+Your task is to extend the Vue Tour of Heroes code sample to simulate a round of Top Trumps.
+Your requirements are to:
+-	Add superpowers for Speed, Strength, and Intelligence to our heroes and villains
+-	Create a new “Battle” view where a player can take part in a single round of top trumps
+-	When initiating a new battle, the human player’s card must be visible but the computer player’s card must be hidden initially
+-	Player cards can be selected however you like, but the human player must play as a hero and the computer as a villain
+-	The human player must be able to select one of the superpowers on the card they have been dealt, which is then to be compared to the computer player’s card – at this point the computer player’s card can be revealed
+-	Declare a winner for the round based on the player with the highest value
 
-- [Tour of Heroes with Angular](https://papa-heroes-angular.azurewebsites.net)
-- [Tour of Heroes with React](https://papa-heroes-react.azurewebsites.net)
-- Tour of Heroes with Svelte - coming soon!
-- [Tour of Heroes with Vue](https://papa-heroes-vue.azurewebsites.net)
+Note: there is no need for a player to have a hand of cards as only a single round is to be played
+The primary objective is to ensure your application is functional. However, additional plaudits will be won for code structuring and simple but appropriate styling, animation, etc.
+
 
 ## Getting Started
+- Clone the repository
+- Navigate to vue-app
+- npm install
+- npm run quick
 
-1. Go to the folder where your preferred web framework is located, and open it's readme
+## Appendix A: Superhero Powers
+In order for you to not spend time worrying about what values to give each character, the list below can be used.
+| Hero/Villain              | Speed | Strength | Intelligence |
+| ------------------------- | ----- | -------- | ------------ |
+| Aslaug                    | 34    | 42       | 11           |
+| Bjorn Ironside            | 44    | 23       | 62           |
+| Ivar the Boneless         | 5     | 86       | 32           |
+| Lagertha the Shieldmaiden | 35    | 12       | 54           |
+| Thora Town-hart           | 61    | 50       | 24           |
+| Madelyn                   | 78    | 36       | 31           |
+| Heidrek                   | 59    | 54       | 25           |
+| Ella                      | 14    | 7        | 95           |
+| Landon                    | 27    | 82       | 29           |
+| Ragnar Lothbrok           | 98    | 47       | 19           |
 
-| Web Framework | Folder                                                                             |
-| ------------- | ---------------------------------------------------------------------------------- |
-| Vue           | [vue-app](https://github.com/johnpapa/heroes-vue/tree/main/vue-app#tour-of-heroes) |
-
-## What's in the App
-
-Each of these apps contain:
-
-Each of the apps written in the various frameworks/libraries has been designed to have similar features. While consistency is key, I want these apps to be comparable, yet done in an way authentic to each respective framework.
-
-Each project represents heroes and villains. The user can list them and edit them.
-
-Here is a list of those features:
-
-- [x] Start from the official quick-start and CLI
-- [x] Client side routing
-  - [x] Three main routes Heroes, Villains, About
-  - [x] Handles an erroneous route, leading to a PageNotFound component
-  - [x] Active route is highlighted in the nav menu
-  - [x] Routing should use html5 mode, not hash routes
-- [x] API
-  - [x] JSON server as a backend
-  - [x] App served on one port which can access API on another port proxy or CORS)
-  - [x] HTTP - Uses most common client http libraries for each framework
-- [x] Styling
-  - [x] Bulma
-  - [x] SASS
-  - [x] Font Awesome
-  - [x] Same exact css in every app
-- [x] Editing - Heroes and Villains will be editable (add, update, delete)
-- [x] State/Store - Uses a store for state management
-- [x] Web development server handles fallback routing
-- [x] Generic components
-  - [x] Modal
-  - [x] Button Tool
-  - [x] Card
-  - [x] Header bar
-  - [x] List header
-  - [x] Nav bar
-- [x] Props in and emit events out
-- [x] Environment variable for the API location
-
-### Why Cypress?
-
-Cypress.io makes it easy to run all three apps simultaneously in end to end tests, so you can watch the results while developing.
-
-### Why abstracted CSS?
-
-The goal of the project was to show how each framework can be designed to create the same app. Each uses their own specific techniques in a way that is tuned to each framework. However the one caveat I wanted to achieve was to make sure all of them look the same. While I could have used specific styling for each with scoped and styled components, I chose to create a single global styles file that they all share. This allowed me to provide the same look and feel, run the same cypress tests, and focus more on the HTML and JavaScript/TypeScript.
-
-### Optional JSON Server
-
-The app uses an API with Azure Functions by default. But you can setup a JSON server for a backend. This allows you to run the code without needing any database engines or cloud accounts. Enjoy!
-
-## Problems or Suggestions
-
-[Open an issue here](/issues)
-
-## Thank You
-
-Thank you to [Sarah Drasner](https://twitter.com/), [Brian Holt](https://twitter.com/), [Chris Noring](https://twitter.com/), [Craig Shoemaker](https://twitter.com/), and [Ward Bell](https://twitter.com/wardbell) for providing input and reviewing the code in some of the repos for the Angular, React, Svelte, and Vue apps:
-
-- [heroes-angular](https://github.com/johnpapa/heroes-angular)
-- [heroes-react](https://github.com/johnpapa/heroes-react)
-- [heroes-svelte](https://github.com/johnpapa/heroes-svelte)
-- [heroes-vue](https://github.com/johnpapa/heroes-vue)
-
-## Resources
-
-- [VS Code](https://code.visualstudio.com/?WT.mc_id=javascript-0000-jopapa)
-- [Azure Free Trial](https://azure.microsoft.com/free/?WT.mc_id=javascript-0000-jopapa)
-- [VS Code Extension for Node on Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack&WT.mc_id=javascript-0000-jopapa)
-- [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode?WT.mc_id=javascript-0000-jopapa)
-- [VS Code - macOS keys](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf?WT.mc_id=javascript-0000-jopapa)
-- [VS Code - Windows keys](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf?WT.mc_id=javascript-0000-jopapa)
-
-### Debugging Resources
-
-- [Debugging Angular in VS Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial?WT.mc_id=javascript-0000-jopapa)
-- [Debugging React in VS Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial?WT.mc_id=javascript-0000-jopapa)
-- [Debugging Vue in VS Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial?WT.mc_id=javascript-0000-jopapa)
