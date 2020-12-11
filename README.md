@@ -24,10 +24,33 @@ The primary objective is to ensure your application is functional. However, addi
 
 
 ## Getting Started
-- Clone the repository
-- Navigate to vue-app
-- npm install
-- npm run quick
+
+1. Clone this repository
+
+   ```bash
+   git clone https://github.com/netcall-liberty/top-trumps-vue.git
+   cd heroes-vue/vue-app
+   ```
+
+1. Install the npm packages
+
+   ```bash
+   npm install
+   ```
+
+1. Run the app
+
+   ```bash
+   npm run serve
+   ```
+
+1. Open a second terminal and run the API
+
+   ```bash
+   cd ..
+   cd api
+   func start
+   ```
 
 ## Appendix A: Superhero Powers
 In order for you to not spend time worrying about what values to give each character, the list below can be used.
