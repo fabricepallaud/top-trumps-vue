@@ -38,19 +38,12 @@ The primary objective is to ensure your application is functional. However, addi
    npm install
    ```
 
-1. Run the app
+2. Run the app
 
    ```bash
-   npm run serve
+   npm run quick
    ```
 
-1. Open a second terminal and run the API
-
-   ```bash
-   cd ..
-   cd api
-   func start
-   ```
 
 ## Appendix A: Superhero Powers
 In order for you to not spend time worrying about what values to give each character, the list below can be used.
