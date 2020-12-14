@@ -8,8 +8,6 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "backend": "json-server-auth --watch db.json --routes routes.json --port 9627 --middlewares ./node_modules/json-server-reset",
-    "cypress": "npx cypress open",
-    "e2e": "concurrently \"npm run quick\" \"npm run cypress\"",
     "quick": "concurrently \"npm run backend\" \"npm run serve\""
   },
   "dependencies": {
@@ -39,7 +37,6 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "babel-eslint": "^10.0.3",
     "concurrently": "^5.3.0",
-    "cypress": "^5.6.0",
     "eslint": "^6.0.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",

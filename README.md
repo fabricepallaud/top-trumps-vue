@@ -29,7 +29,7 @@ The primary objective is to ensure your application is functional. However, addi
 
    ```bash
    git clone https://github.com/netcall-liberty/top-trumps-vue.git
-   cd top-trumps-vue/vue-app
+   cd top-trumps-vue
    ```
 
 1. Install the npm packages
