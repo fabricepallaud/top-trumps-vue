@@ -4,9 +4,11 @@
 
 Top Trumps is a card game originally created in the 1960s. Each card contains a list of numerical data, and the aim of the game is to compare these values to try to trump and win an opponent's card. Over the years Top Trumps have released many themes from cars to superheroes.
 
+
 ## Tour of Heroes
 
 The Tour of Heroes tutorial is Angular’s means to introducing developers new to Angular to the syntax and concepts of the JavaScript framework (see https://angular.io/tutorial). John Papa, who wrote the original Tour of Heroes, has also adapted it to React and Vue. For this exercise we will be making use of the Vue implementation of Tour of Heroes: https://github.com/johnpapa/heroes-vue
+
 
 ## Let Battle Commence!
 
@@ -20,7 +22,11 @@ Your requirements are to:
 -	Declare a winner for the round based on the player with the highest value
 
 Note: there is no need for a player to have a hand of cards as only a single round is to be played
-The primary objective is to ensure your application is functional. However, additional plaudits will be won for code structuring and simple but appropriate styling, animation, etc.
+
+The primary objective is to ensure your application is functional, but consideration should also be given to:
+- code structuring 
+- simple but appropriate UX, styling, animation, etc.
+- automated testing
 
 
 ## Getting Started
