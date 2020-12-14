@@ -35,6 +35,18 @@ export default defineComponent({
 });
 </script>
 
+<style scoped lang="scss">
+.modal-card-foot button {
+  display: inline-block;
+  width: 80px;
+}
+
+.modal-card-head,
+.modal-card-body {
+  text-align: center;
+}
+</style>
+
 <template>
   <div id="modal" class="modal" :class="{ 'is-active': isOpen }">
     <div class="modal-background"></div>

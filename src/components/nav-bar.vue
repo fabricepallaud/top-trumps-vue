@@ -6,6 +6,16 @@ export default defineComponent({
 });
 </script>
 
+<style scoped lang="scss">
+@import '@/vars.scss';
+
+.menu-list .active-link,
+.menu-list .router-link-active {
+  color: #fff;
+  background-color: $link;
+}
+</style>
+
 <template>
   <nav class="column is-2 menu">
     <p class="menu-label">Menu</p>

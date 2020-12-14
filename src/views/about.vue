@@ -8,7 +8,7 @@ export default defineComponent({
 
 <template>
   <div class="content-container">
-    <div class="content-title-group not-found">
+    <div class="content-title-group">
       <h2 class="title">Tour of Heroes</h2>
       <p>
         This project was created to help represent a fundamental app written
