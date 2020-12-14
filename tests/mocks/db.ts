@@ -22,11 +22,6 @@ const heroes: Array<Hero> = [
     description: 'aka Hlaðgerðr',
   },
   {
-    id: 'HeroRagnar',
-    name: 'Ragnar Lothbrok',
-    description: 'aka Ragnar Sigurdsson',
-  },
-  {
     id: 'HeroThora',
     name: 'Thora Town-hart',
     description: 'daughter of Earl Herrauðr of Götaland',
@@ -40,8 +35,8 @@ const villains: Array<Villain> = [
     description: 'the cat whisperer',
   },
   {
-    id: 'VillainHaley',
-    name: 'Haley',
+    id: 'VillainHeidrik',
+    name: 'Heidrik',
     description: 'pen wielder',
   },
   {
@@ -53,6 +48,11 @@ const villains: Array<Villain> = [
     id: 'VillainLandon',
     name: 'Landon',
     description: 'Mandalorian mauler',
+  },
+  {
+    id: 'VillainRagnar',
+    name: 'Ragnar Lothbrok',
+    description: 'aka Ragnar Sigurdsson',
   },
 ];
 

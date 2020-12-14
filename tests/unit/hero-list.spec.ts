@@ -10,7 +10,7 @@ describe('HeroList', () => {
 
     const items = wrapper.findAll('li');
 
-    expect(items).toHaveLength(6);
+    expect(items).toHaveLength(5);
   });
 
   it('allows selection of hero', async () => {
