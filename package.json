@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "backend": "json-server-auth --watch db.json --routes routes.json --port 9627 --middlewares ./node_modules/json-server-reset",
@@ -16,25 +17,28 @@
     "@fortawesome/vue-fontawesome": "^2.0.0",
     "axios": "^0.21.0",
     "bulma": "^0.9.1",
-    "core-js": "^3.6.4",
+    "core-js": "^3.6.5",
     "express": "^4.17.1",
-    "vue": "^3.0.0-beta.1",
+    "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "^4.5.9",
     "@vue/cli-plugin-eslint": "^4.5.9",
     "@vue/cli-plugin-router": "^4.5.9",
     "@vue/cli-plugin-typescript": "^4.5.9",
+    "@vue/cli-plugin-unit-jest": "^4.5.9",
     "@vue/cli-plugin-vuex": "^4.5.9",
     "@vue/cli-service": "^4.5.9",
-    "@vue/compiler-sfc": "^3.0.3",
+    "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-0",
     "babel-eslint": "^10.0.3",
     "concurrently": "^5.3.0",
     "eslint": "^6.0.0",
@@ -47,6 +51,7 @@
     "node-sass": "^4.13.1",
     "prettier": "^2.1.2",
     "sass-loader": "^10.1.0",
-    "typescript": "~3.9.3"
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
   }
 }

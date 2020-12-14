@@ -1,4 +1,6 @@
-const heroes = [
+import { Hero, Villain } from '@/store/modules/models';
+
+const heroes: Array<Hero> = [
   {
     id: 'HeroAslaug',
     name: 'Aslaug',
@@ -31,7 +33,7 @@ const heroes = [
   },
 ];
 
-const villains = [
+const villains: Array<Villain> = [
   {
     id: 'VillainMadelyn',
     name: 'Madelyn',
@@ -54,6 +56,4 @@ const villains = [
   },
 ];
 
-const data = { heroes, villains };
-
-module.exports = data;
+export const data = { heroes, villains };
