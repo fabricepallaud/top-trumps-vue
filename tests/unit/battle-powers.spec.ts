@@ -5,18 +5,14 @@ import { RootState } from '@/store/modules/types';
 import { State } from '@/store/modules/models';
 import { mount } from '@vue/test-utils';
 import { createStore } from 'vuex';
+import { data } from '../mocks/db';
 
 const store = createStore({
   modules: {
     heroes: {
       state() {
         return {
-          heroes: [
-            {
-              "id": "HeroAslaug",
-              "name": "Aslaug",
-            },
-          ],
+          heroes: data.heroes,
         }
       },
       namespaced: true
@@ -24,12 +20,7 @@ const store = createStore({
     villains: {
       state() {
         return {
-          villains: [
-            {
-              "id": "VillainMadelyn",
-              "name": "Madelyn",
-            },
-          ]
+          villains: data.villains,
         }
       },
       namespaced: true
