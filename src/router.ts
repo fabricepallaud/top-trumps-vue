@@ -7,6 +7,12 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/heroes',
   },
   {
+    path: '/battle',
+    name: 'battle',
+    component: () =>
+      import(/* webpackChunkName: "heroes" */ './views/battle/battle.vue'),
+  },
+  {
     path: '/heroes',
     name: 'heroes',
     component: () =>

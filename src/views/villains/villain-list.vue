@@ -46,7 +46,13 @@ export default defineComponent({
       role="presentation"
     >
       <div class="card">
-        <CardContent :name="villain.name" :description="villain.description" />
+        <CardContent
+          :name="villain.name"
+          :description="villain.description"
+          :speed="villain.speed"
+          :strength="villain.strength"
+          :intelligence="villain.intelligence"
+        />
         <footer class="card-footer">
           <ButtonFooter
             class="delete-item"

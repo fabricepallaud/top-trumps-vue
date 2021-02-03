@@ -135,7 +135,7 @@ export default defineComponent({
           @selected="select($event)"
         ></HeroList>
         <HeroDetail
-          v-if="selected"
+          v-else
           :hero="selected"
           @unselect="clear"
           @save="save"

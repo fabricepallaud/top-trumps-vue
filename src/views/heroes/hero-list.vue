@@ -77,7 +77,13 @@ export default defineComponent({
   <ul class="list">
     <li v-for="(hero, index) in heroes" :key="hero.id" role="presentation">
       <div class="card">
-        <CardContent :name="hero.name" :description="hero.description" />
+        <CardContent
+          :name="hero.name"
+          :description="hero.description"
+          :speed="hero.speed"
+          :strength="hero.strength"
+          :intelligence="hero.intelligence"
+        />
         <footer class="card-footer">
           <ButtonFooter
             class="delete-item"

@@ -44,6 +44,9 @@ export default defineComponent({
           id: '',
           name: '',
           description: '',
+          speed: '',
+          strength: '',
+          intelligence: '',
         };
         state.addMode = true;
       }
@@ -99,6 +102,36 @@ export default defineComponent({
             placeholder="dance fight!"
             type="text"
             v-model="editingHero.description"
+          />
+        </div>
+        <div class="field">
+          <label class="label" for="speed">speed</label>
+          <input
+            class="input"
+            name="speed"
+            placeholder="e.g. 5"
+            type="text"
+            v-model="editingHero.speed"
+          />
+        </div>
+        <div class="field">
+          <label class="label" for="strength">strength</label>
+          <input
+            class="input"
+            name="strength"
+            placeholder="e.g. 5"
+            type="text"
+            v-model="editingHero.strength"
+          />
+        </div>
+        <div class="field">
+          <label class="label" for="intelligence">intelligence</label>
+          <input
+            class="input"
+            name="description"
+            placeholder="e.g. 5"
+            type="text"
+            v-model="editingHero.intelligence"
           />
         </div>
       </div>

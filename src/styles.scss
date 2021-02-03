@@ -127,3 +127,45 @@ button.link {
   border: none;
   cursor: pointer;
 }
+
+.userCard,
+.computerCard {
+  margin-bottom: 20px;
+}
+
+.result {
+  font-size: 30px;
+  color: green;
+
+  .caption {
+    text-transform: capitalize;
+  }
+
+  .winner {
+    font-weight: bold;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.pointer-none {
+  pointer-events:none
+}
+
+.button {
+  text-transform: uppercase;
+}
+
+// .fade-enter,
+// .fade-leave-to {
+//   opacity: 0.5;
+// }
+
+// .fade-enter-active,
+// .fade-leave-active {
+//   transition: 0.2s opacity ease-out;
+// }

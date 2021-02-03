@@ -147,7 +147,7 @@ export default defineComponent({
           @deleted="askToDelete($event)"
         ></VillainList>
         <VillainDetail
-          v-if="selected"
+          v-else
           :villain="selected"
           @unselect="clear"
           @save="save"

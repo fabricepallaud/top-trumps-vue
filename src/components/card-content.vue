@@ -12,6 +12,18 @@ export default defineComponent({
       type: String,
       default: () => '',
     },
+    speed: {
+      type: String,
+      default: () => '',
+    },
+    strength: {
+      type: String,
+      default: () => '',
+    },
+    intelligence: {
+      type: String,
+      default: () => '',
+    },
   },
 });
 </script>
@@ -21,6 +33,18 @@ export default defineComponent({
     <div class="content">
       <div class="name">{{ name }}</div>
       <div class="description">{{ description }}</div>
+      <div class="power">
+        <span>Speed:</span>
+        {{ speed }}
+      </div>
+      <div class="power">
+        <span>Strength:</span>
+        {{ strength }}
+      </div>
+      <div class="power">
+        <span>Intelligence:</span>
+        {{ intelligence }}
+      </div>
     </div>
   </div>
 </template>
