@@ -41,6 +41,7 @@ export default defineComponent({
       updateResultAction,
       updateHeroSelectedAction,
       updateVillainSelectedAction,
+      updatePowerSelectedAction,
     } = useBattle();
 
     const state: ComponentState = reactive({
@@ -103,6 +104,7 @@ export default defineComponent({
       updateHeroSelectedAction(null);
       updateVillainSelectedAction(null);
       updateResultAction(null);
+      updatePowerSelectedAction('');
     }
 
     return {

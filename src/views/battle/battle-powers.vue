@@ -77,7 +77,7 @@ export default defineComponent({
       <button
         v-for="(power, i) in powers" :key="i" 
         @click="comparePower(power)"
-        class="button"
+        class="button power"
       >
         {{ power }}
       </button>

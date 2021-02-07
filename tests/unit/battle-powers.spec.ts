@@ -1,63 +1,13 @@
 import { shallowMount } from '@vue/test-utils';
 import BattlePowers from '@/views/battle/battle-powers.vue';
-import { ActionContext } from 'vuex';
-import { RootState } from '@/store/modules/types';
-import { State } from '@/store/modules/models';
-import { mount } from '@vue/test-utils';
-import { createStore } from 'vuex';
-import { data } from '../mocks/db';
-
-const store = createStore({
-  modules: {
-    heroes: {
-      state() {
-        return {
-          heroes: data.heroes,
-        }
-      },
-      namespaced: true
-    },
-    villains: {
-      state() {
-        return {
-          villains: data.villains,
-        }
-      },
-      namespaced: true
-    },
-    battle: {
-      state() {
-        return {
-          powerSelected: '',
-        }
-      },
-      mutations: {
-        UPDATE_POWER_SELECTED(state: State, val: string) {
-          state.powerSelected = val;
-        },
-      },
-      actions: {
-        updatePowerSelectedAction(
-          { commit }: ActionContext<State, RootState>,
-          val: number
-        ) {
-          commit('UPDATE_POWER_SELECTED', val);
-        },
-      },
-      getters: {
-        powerSelected: (state: State) => state.powerSelected,
-      },
-      namespaced: true
-    }
-  },  
-});
+import store from '@/store';
 
 describe('BattlePowers', () => {
   it('updates store variable powerSelected with power clicked by user', async () => {
     const wrapper = shallowMount(BattlePowers, {});
 
-    await wrapper.findAll('.button')[0].trigger('click');
+    await wrapper.findAll('.power')[1].trigger('click');
 
-    expect(store.getters['battle/powerSelected']).toBeTruthy();
+    expect(store.getters['powerSelected']).not.toBe('');
   });
 });
